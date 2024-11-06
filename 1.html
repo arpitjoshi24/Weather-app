@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body class="bg-[#17153B]">
+    <!--navbar-- bg-[url(1729960124709.jpg)] --><!--
+    <nav class="text-white flex justify-between px-12 bg-[#433D8B]">
+        <h1 class="text-white font-bold  text-2xl">weather forecast</h1>
+        <div
+            class="dropdown-menu absolute -top-full left-0  w-full flex flex-col gap-6 items-center py-2 text-lg font-bold lg:static">
+            <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
+                <li>
+                    <input type="text"
+                        class="block w-full pl-10 pr-3 py-2 border border-gray-600 rounded-md leading-5 bg-[#020f30] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                        placeholder="Search for a city...">
+                </li>
+                <li>
+                    <select
+                        class="appearance-none bg-[#020f30] border border-gray-600 text-white rounded-md py-2 px-4 pr-8 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                        <option value="C">°C</option>
+                        <option value="F">°F</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+        <div class="toggle-button lg:hidden">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+    </nav>-->
+    <!--main-->
+    <div class="text-[#17153B] bg-[url(pexels-eberhardgross-1287075.jpg)] h-screen bg-cover">
+        <div>
+            <nav class="text-[#433D8B] flex justify-between px-12 bg-blue-900 bg-opacity-25">
+                <h1 class=" font-bold text-2xl">weather forecast</h1>
+                <div
+                    class="dropdown-menu absolute -top-full left-0  w-full flex flex-col gap-6 items-center py-2 text-lg font-bold lg:static">
+                    <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
+                        <li>
+                            <input type="text"
+                                class="block w-full pl-10 pr-3 py-2 border border-gray-600 rounded-md leading-5 bg-[#020f30] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                placeholder="Search for a city...">
+                        </li>
+                        <li>
+                            <select
+                                class="appearance-none bg-[#020f30] border border-gray-600 text-white rounded-md py-2 px-4 pr-8 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                <option value="C">°C</option>
+                                <option value="F">°F</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <div class="toggle-button lg:hidden">
+                    <i class="fa-solid fa-bars fa-lg"></i>
+                </div>
+            </nav>
+        </div>
+        <div class="ml-10 mt-14">
+            <h1 class="text-5xl font-bold mb-24">Panda</h1>
+            <h1 class="text-7xl font-bold">72<sup>o</sup><sub class="text-lg">Partially cloudy</sub></h1>
+            <h1 class="text-2xl">Sun 77/57</h1></div>
+    </div>
+    <!--lalllalallal-->
+    <!--weekly-->
+    <div class="p-4 space-y-6 flex flex-col lg:flex-row mt-24">
+        <div class="w-full lg:w-3/5 space-y-4">
+            <h1 class="text-5xl text-center text-[#C8ACD6] font-bold">weekly info</h1>
+            <!-- Top row -->
+            <div class="flex flex-col items-center sm:flex-row sm:justify-center sm:space-x-8 space-y-4 sm:space-y-0">
+                <div class="w-full sm:w-1/3 max-w-xs">
+                    <div
+                        class="h-48 rounded-2xl flex flex-col items-center justify-center border-2 border-indigo-600/50 bg-gradient-to-b from-indigo-300 via-indigo-500 to-indigo-800 hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                        <p class="text-5xl">30</p>
+                        <p class="text-lg">Monday</p>
+                        <i class="fa-solid fa-cloud"></i>
+                        <p class="text-lg text-white">Sunny</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/3 max-w-xs">
+                    <div
+                        class="h-48 rounded-2xl flex flex-col items-center justify-center bg-gradient-to-b from-slate-300 via-slate-500 to-slate-800 hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                        <p class="text-5xl">30</p>
+                        <p class="text-lg">Monday</p>
+                        <i class="fa-solid fa-cloud"></i>
+                        <p class="text-lg text-white">Sunny</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Middle row -->
+            <div class="flex flex-col items-center sm:flex-row justify-evenly space-y-4 sm:space-y-0 sm:space-x-4">
+                <div class="w-full sm:w-1/3 max-w-xs">
+                    <div
+                        class="h-48 rounded-2xl flex flex-col items-center justify-center bg-gradient-to-br from-yellow-400 to-yellow-400/1 border-2 border-yellow-600/50 hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                        <p class="text-5xl">30</p>
+                        <p class="text-lg">Monday</p>
+                        <i class="fa-solid fa-sun"></i>
+                        <p class="text-lg">Sunny</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/3 max-w-xs">
+                    <div
+                        class="h-48 rounded-2xl flex flex-col items-center justify-center bg-gradient-to-br from-blue-800 to-blueo-800/1 border-2 border-blue-600/50 hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                        <p class="text-5xl">30</p>
+                        <p class="text-lg">Monday</p>
+                        <i class="fa-solid fa-wind"></i>
+                        <p class="text-lg text-white">Sunny</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/3 max-w-xs">
+                    <div
+                        class="h-48 rounded-2xl flex flex-col items-center justify-center bg-gradient-to-br from-purple-800 to-purple-800/1 border-2 border-purple-600/50 hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                        <p class="text-5xl">30</p>
+                        <p class="text-lg">Monday</p>
+                        <i class="fa-solid fa-umbrella"></i>
+                        <p class="text-lg text-white">Sunny</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom row -->
+            <div
+                class="flex flex-col items-center sm:flex-row sm:justify-center sm:space-x-8 space-y-4 sm:space-y-0 text-white">
+                <div class="w-full sm:w-1/3 max-w-xs">
+                    <div
+                        class="h-48 rounded-2xl flex flex-col items-center justify-center bg-gradient-to-br from-indigo-800 to-indigo-800/1 border-2 border-indigo-600/50 hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                        <p class="text-5xl">30</p>
+                        <p class="text-lg">Monday</p>
+                        <i class="fa-solid fa-umbrella"></i>
+                        <p class="text-lg text-white">Sunny</p>
+                    </div>
+                </div>
+                <div class="w-full sm:w-1/3 max-w-xs">
+                    <div
+                        class="h-48 rounded-2xl flex flex-col items-center justify-center bg-gradient-to-br from-gray-500 to-gray-500/1 border-2 border-gray-600/50 hover:-translate-y-1 transform transition duration-200 hover:shadow-md">
+                        <p class="text-5xl">30</p>
+                        <p class="text-lg">Monday</p>
+                        <i class="fa-solid fa-bolt"></i>
+                        <p class="text-lg text-white">Sunny</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Climate Info Section -->
+        <div class="lg:w-2/5 md:grid md:grid-cols-2 lg:flex lg:flex-col">
+            <!-- First Climate Info Box -->
+            <div class=" rounded rounded-t-xl p-10 text-white">
+                <div class="flex justify-between bg-gradient-to-br from-purple-800 to-purple-800/1 border-2 border-purple-600/50 p-4 rounded-t-xl">
+                    <h1 class="font-bold text-sm sm:text-base">Climate information</h1>
+                    <h1 class="font-bold text-sm sm:text-base">Last 12 months</h1>
+                    <h1 class="font-bold text-sm sm:text-base">All Years</h1>
+                </div>
+                <div  class="bg-gradient-to-br from-purple-800 to-purple-800/1 border-2 border-purple-600/50 flex flex-col justify-between">
+                    <div class="flex justify-around p-3 ">
+                        <p class="text-sm sm:text-base">Hottest month</p>
+                        <p class="text-sm sm:text-base">June</p>
+                        <p class="text-sm sm:text-base">May</p>
+                    </div>
+                    <div class="flex justify-around p-3">
+                        <p class="text-sm sm:text-base">Coldest month</p>
+                        <p class="text-sm sm:text-base">Jan</p>
+                        <p class="text-sm sm:text-base">Jan</p>
+                    </div>
+                    <div class="flex justify-around p-3">
+                        <p class="text-sm sm:text-base">Wettest month</p>
+                        <p class="text-sm sm:text-base">Aug</p>
+                        <p class="text-sm sm:text-base">Aug</p>
+                    </div>
+                    <div class="flex justify-around p-3">
+                        <p class="text-sm sm:text-base">Windiest month</p>
+                        <p class="text-sm sm:text-base">May</p>
+                        <p class="text-sm sm:text-base">May</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Climate Info Box -->
+            <div class="rounded rounded-t-xl p-10 text-white ">
+                <div  class="flex justify-evenly bg-gradient-to-br from-purple-800 to-purple-800/1 border-2 border-purple-600/50 rounded-t-xl p-3">
+                    <h1 class="font-bold text-sm sm:text-base">Summary</h1>
+                    <h1 class="font-bold text-sm sm:text-base">Max</h1>
+                    <h1 class="font-bold text-sm sm:text-base">Avg</h1>
+                    <h1 class="font-bold text-sm sm:text-base">Min</h1>
+                </div>
+                <div class="bg-gradient-to-br from-purple-800 to-purple-800/1 border-2 border-purple-600/50  p-4 gap-5">
+                   <div class="flex justify-around p-3">
+                        <p class="text-sm sm:text-base">High temp(<sup>o</sup>F)</p>
+                        <p class="text-sm sm:text-base">91</p>
+                        <p class="text-sm sm:text-base">71</p>
+                        <p class="text-sm sm:text-base">47</p>
+                    </div>
+                    <div class="flex justify-around p-3">
+                        <p class="text-sm sm:text-base">Low temp(<sup>o</sup>F)</p>
+                        <p class="text-sm sm:text-base">75</p>
+                        <p class="text-sm sm:text-base">58</p>
+                        <p class="text-sm sm:text-base">34</p>
+                    </div>
+                    <div class="flex justify-around p-3">
+                        <p class="text-sm sm:text-base">Precipitation(in)</p>
+                        <p class="text-sm sm:text-base">5.16</p>
+                        <p class="text-sm sm:text-base">0.16</p>
+                        <p class="text-sm sm:text-base">0</p>
+                    </div>
+                    <div class="flex justify-around p-3">
+                        <p class="text-sm sm:text-base">Wind(mph)</p>
+                        <p class="text-sm sm:text-base">6.9</p>
+                        <p class="text-sm sm:text-base">2.79</p>
+                        <p class="text-sm sm:text-base">1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CALENDAR-->
+    <div class="mt-48">
+        <div class="flex justify-center my-4 text-white">
+            <span
+                class="font-bold text-5xl text-center lg:w-20 lg:p-3 border shadow-xl shadow-[#433D8B] mb-3">C</span>
+            <span class="font-bold text-5xl text-center lg:w-20 lg:p-3 border shadow-xl mt-3">A</span>
+            <span
+                class="font-bold text-5xl text-center lg:w-20 lg:p-3 border shadow-xl shadow-[#433D8B] mb-3">L</span>
+            <span class="font-bold text-5xl text-center lg:w-20 lg:p-3 border mt-3">E</span>
+            <span
+                class="font-bold text-5xl text-center lg:w-20 lg:p-3 border shadow-xl shadow-[#433D8B] mb-3">N</span>
+            <span class="font-bold text-5xl text-center lg:w-20 lg:p-3 border mt-3">D</span>
+            <span
+                class="font-bold text-5xl text-center lg:w-20 lg:p-3 border shadow-xl shadow-[#433D8B] mb-3">A</span>
+            <span class="font-bold text-5xl text-center lg:w-20 lg:p-3 border mt-3">R</span>
+        </div>
+        <div class="md:flex justify-evenly">
+            <!--second-->
+            <div class="md:flex flex-col text-white justify-center hidden md:block">
+                <span class="font-bold text-5xl text-center lg:h-16 lg:p-3 border shadow-xl shadow-[#433D8B] ml-3">C</span>
+                <span class="font-bold text-5xl text-center lg:h-16 lg:p-3 border mr-3">A</span>
+                <span class="font-bold text-5xl text-center lg:h-16 lg:p-3 border shadow-xl shadow-[#433D8B] ml-3">L</span>
+                <span class="font-bold text-5xl text-center lg:h-16 lg:p-3 border mr-3">E</span>
+                <span class="font-bold text-5xl text-center lg:h-16 lg:p-3 border shadow-xl shadow-[#433D8B] ml-3">N</span>
+                <span class="font-bold text-5xl text-center lg:h-16 lg:p-3 border mr-3">D</span>
+                <span class="font-bold text-5xl text-center lg:h-16 lg:p-3 border shadow-xl shadow-[#433D8B] ml-3">A</span>
+                <span class="font-bold text-5xl text-center lg:h-16 lg:p-3 border mr-3">R</span>
+            </div>
+            <!--second end-->
+            <div>
+                <div
+                    class="p-4 bg-gradient-to-br from-purple-800 to-purple-800/1 border-2 border-purple-600/50 grid grid-cols-12 gap-4 my-4 rounded-xl lg:mx-24 md:mx-10">
+                    <button
+                        class="rounded-lg  flex items-center justify-center font-bold bg-[#F4D03F] h-10 w-12 hover:bg-yellow-600">Nov</button>
+                    <button
+                        class="rounded-lg  flex items-center justify-center font-bold bg-[#F4D03F] h-10 w-12 hover:bg-yellow-600">Dec</button>
+                    <button
+                        class="rounded-lg  flex items-center justify-center font-bold bg-[#F4D03F] h-10 w-12 hover:bg-yellow-600">Jan</button>
+                    <button
+                        class="rounded-lg  flex items-center justify-center font-bold bg-[#F4D03F] h-10 w-12 hover:bg-yellow-600">Feb</button>
+                    <button
+                        class="rounded-lg  flex items-center justify-center font-bold bg-[#F4D03F] h-10 w-12 hover:bg-yellow-600">Mar</button>
+                    <button
+                        class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10 w-12 hover:bg-yellow-600">Apr</button>
+                    <button
+                        class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10 w-12 hover:bg-yellow-600">May</button>
+                    <button
+                        class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10 w-12 hover:bg-yellow-600">Jun</button>
+                    <button
+                        class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10 w-12 hover:bg-yellow-600">Jul</button>
+                    <button
+                        class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10 w-12 hover:bg-yellow-600">Aug</button>
+                    <button
+                        class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10 w-12 hover:bg-yellow-600">Sep</button>
+                    <button
+                        class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10 w-12 hover:bg-yellow-600">Oct</button>
+                </div>
+                <div
+                    class="p-4 my-4 grid grid-cols-7 gap-4 rounded-xl lg:mx-24 md:mx-10 bg-gradient-to-br from-purple-800 to-purple-800/1 border-2 border-purple-600/50">
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10 ">Sunday
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10">Monday
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10">Tuesday
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10">Wednesday
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10">Thursday
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10">Friday
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-yellow-400 h-10">Saturday
+                    </div>
+                </div>
+                <div
+                    class="p-4 my-4 bg-gradient-to-br from-purple-800 to-purple-800/1 border-2 border-purple-600/50 grid grid-cols-7 gap-4 rounded-xl md:mx-10 lg:mx-24">
+                    <div class="rounded-lg    flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">2</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">3</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">4</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">5</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">6</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">7</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">8</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">9</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">10</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">11</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">12</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">13</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">14</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">15</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">16</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">17</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">18</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">19</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">20</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                    <div class="rounded-lg  flex items-center justify-center font-bold bg-white flex flex-col">
+                        <h1 class="">1</h1>
+                        <div class="bg-yellow-500 rounded-xl">abc</div>
+                        <h1>89<sup>o</sup>63<sup>o</sup></h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--lifestyle tips-->
+    <h1 class="text-5xl mt-48 text-center my-4 text-[#C8ACD6] font-bold">LIFESTYLE TIPS</h1>
+    <div class="flex flex-wrap justify-evenly gap-5 mb-48">
+        <div class="max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden flex">
+            <div class="flex items-center justify-center bg-[#433D8B] p-4">
+                <i class="fas fa-running fa-2x text-white"></i>
+            </div>
+            <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800">Stay Active!</h2>
+                <p class="text-gray-600">Running is a great way to improve your health and mood.</p>
+            </div>
+        </div>
+        <div class="max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden flex">
+            <div class="flex items-center justify-center bg-blue-500 p-4">
+                <i class="fas fa-running fa-2x text-white"></i>
+            </div>
+            <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800">Moderate UV index</h2>
+                <p class="text-gray-600">Running is a great way to improve your health and mood.</p>
+            </div>
+        </div>
+        <div class="max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden flex">
+            <div class="flex items-center justify-center bg-blue-500 p-4">
+                <i class="fas fa-running fa-2x text-white"></i>
+            </div>
+            <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800">Moderate UV index</h2>
+                <p class="text-gray-600">Running is a great way to improve your health and mood.</p>
+            </div>
+        </div>
+        <div class="max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden flex">
+            <div class="flex items-center justify-center bg-blue-500 p-4">
+                <i class="fas fa-running fa-2x text-white"></i>
+            </div>
+            <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800">Moderate UV index</h2>
+                <p class="text-gray-600">Running is a great way to improve your health and mood.</p>
+            </div>
+        </div>
+        <div class="max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden flex">
+            <div class="flex items-center justify-center bg-blue-500 p-4">
+                <i class="fas fa-running fa-2x text-white"></i>
+            </div>
+            <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800">Moderate UV index</h2>
+                <p class="text-gray-600">Running is a great way to improve your health and mood.</p>
+            </div>
+        </div>
+        <div class="max-w-sm w-full bg-white shadow-md rounded-lg overflow-hidden flex">
+            <div class="flex items-center justify-center bg-blue-500 p-4">
+                <i class="fas fa-running fa-2x text-white"></i>
+            </div>
+            <div class="p-4">
+                <h2 class="text-lg font-bold text-gray-800">Moderate UV index</h2>
+                <p class="text-gray-600">Running is a great way to improve your health and mood.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    </div>
+
+   
+
+    <!--footer-->
+    <div class="bg-blue-900 h-48 mt-5">
+        <h1 class="text-white text-center text-lg">Weather Forecast</h1>
+    </div>
+
+
+
+
+    <!--footer-->
+    <script>
+        const toggleBtn = document.querySelector(".toggle-button");
+        const dropdown = document.querySelector(".dropdown-menu");
+        toggleBtn.addEventListener("click", () => {
+            dropdown.classList.toggle('top-16');
+        })
+    </script>
+</body>
+
+</html>
