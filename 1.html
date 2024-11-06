@@ -10,31 +10,7 @@
 </head>
 
 <body class="bg-[#17153B]">
-    <!--navbar-- bg-[url(1729960124709.jpg)] --><!--
-    <nav class="text-white flex justify-between px-12 bg-[#433D8B]">
-        <h1 class="text-white font-bold  text-2xl">weather forecast</h1>
-        <div
-            class="dropdown-menu absolute -top-full left-0  w-full flex flex-col gap-6 items-center py-2 text-lg font-bold lg:static">
-            <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8">
-                <li>
-                    <input type="text"
-                        class="block w-full pl-10 pr-3 py-2 border border-gray-600 rounded-md leading-5 bg-[#020f30] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-                        placeholder="Search for a city...">
-                </li>
-                <li>
-                    <select
-                        class="appearance-none bg-[#020f30] border border-gray-600 text-white rounded-md py-2 px-4 pr-8 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
-                        <option value="C">°C</option>
-                        <option value="F">°F</option>
-                    </select>
-                </li>
-            </ul>
-        </div>
-        <div class="toggle-button lg:hidden">
-            <i class="fa-solid fa-bars fa-lg"></i>
-        </div>
-    </nav>-->
-    <!--main-->
+
     <div class="text-[#17153B] bg-[url(pexels-eberhardgross-1287075.jpg)] h-screen bg-cover">
         <div>
             <nav class="text-[#433D8B] flex justify-between px-12 bg-blue-900 bg-opacity-25">
@@ -62,8 +38,8 @@
             </nav>
         </div>
         <div class="ml-10 mt-14">
-            <h1 class="text-5xl font-bold mb-24">Panda</h1>
-            <h1 class="text-7xl font-bold">72<sup>o</sup><sub class="text-lg">Partially cloudy</sub></h1>
+            <h1 class="text-7xl font-bold mb-8" id="city"></h1>
+            <h1 class="text-7xl font-bold temperature">... </h1><span><sub class="text-lg">Partially cloudy</sub></span>
             <h1 class="text-2xl">Sun 77/57</h1></div>
     </div>
     <!--lalllalallal-->
@@ -555,6 +531,30 @@
         toggleBtn.addEventListener("click", () => {
             dropdown.classList.toggle('top-16');
         })
+
+        const apiKey = '72f70b63072ce9610bbc9ca973b425cf'; 
+        const city = 'delhi'; 
+        const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+    function fetchWeather() {
+      fetch(apiUrl)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok ' + response.statusText);
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Update HTML with weather data
+          document.getElementById('city').textContent = data.name;
+          document.getElementsByClassName('temperature')[0].textContent = data.main.temp;
+          document.getElementById('description').textContent = data.weather[0].description;
+        })
+        .catch(error => {
+          console.error('There was a problem with the fetch operation:', error);
+        });
+    }
+
+    fetchWeather();
     </script>
 </body>
 
